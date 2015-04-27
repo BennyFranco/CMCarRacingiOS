@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2D870891AEE66F100121534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D870871AEE66F100121534 /* Main.storyboard */; };
+		B2D8708B1AEE66F100121534 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D8708A1AEE66F100121534 /* Images.xcassets */; };
+		B2D8708E1AEE66F100121534 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D8708C1AEE66F100121534 /* LaunchScreen.xib */; };
+		B2D8709A1AEE66F100121534 /* CMCarRacingiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D870991AEE66F100121534 /* CMCarRacingiOSTests.swift */; };
+		B2D870AA1AEE67AA00121534 /* AnalogStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D870A41AEE67AA00121534 /* AnalogStick.swift */; };
+		B2D870AB1AEE67AA00121534 /* aSBgImg.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D870A51AEE67AA00121534 /* aSBgImg.png */; };
+		B2D870AC1AEE67AA00121534 /* aSThumbImg.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D870A61AEE67AA00121534 /* aSThumbImg.png */; };
+		B2D870AD1AEE67AA00121534 /* ParsingToJavaUTF.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D870A91AEE67AA00121534 /* ParsingToJavaUTF.m */; };
+		B2D870B21AEE67EB00121534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D870AE1AEE67EB00121534 /* AppDelegate.swift */; };
+		B2D870B31AEE67EB00121534 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B2D870AF1AEE67EB00121534 /* GameScene.sks */; };
+		B2D870B41AEE67EB00121534 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D870B01AEE67EB00121534 /* GameScene.swift */; };
+		B2D870B51AEE67EB00121534 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D870B11AEE67EB00121534 /* GameViewController.swift */; };
+		B2D871231AEE6C7900121534 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D871221AEE6C7900121534 /* SwiftyJSON.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2D870941AEE66F100121534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D870721AEE66F100121534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2D870791AEE66F100121534;
+			remoteInfo = CMCarRacingiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B2D8707A1AEE66F100121534 /* CMCarRacingiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMCarRacingiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D8707E1AEE66F100121534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D870881AEE66F100121534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2D8708A1AEE66F100121534 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2D8708D1AEE66F100121534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B2D870931AEE66F100121534 /* CMCarRacingiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMCarRacingiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D870981AEE66F100121534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D870991AEE66F100121534 /* CMCarRacingiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMCarRacingiOSTests.swift; sourceTree = "<group>"; };
+		B2D870A41AEE67AA00121534 /* AnalogStick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalogStick.swift; sourceTree = "<group>"; };
+		B2D870A51AEE67AA00121534 /* aSBgImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aSBgImg.png; sourceTree = "<group>"; };
+		B2D870A61AEE67AA00121534 /* aSThumbImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aSThumbImg.png; sourceTree = "<group>"; };
+		B2D870A71AEE67AA00121534 /* CMCarRacingiOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMCarRacingiOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		B2D870A81AEE67AA00121534 /* ParsingToJavaUTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsingToJavaUTF.h; sourceTree = "<group>"; };
+		B2D870A91AEE67AA00121534 /* ParsingToJavaUTF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsingToJavaUTF.m; sourceTree = "<group>"; };
+		B2D870AE1AEE67EB00121534 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2D870AF1AEE67EB00121534 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B2D870B01AEE67EB00121534 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B2D870B11AEE67EB00121534 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B2D871211AEE6C7900121534 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		B2D871221AEE6C7900121534 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2D870771AEE66F100121534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2D870901AEE66F100121534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2D870711AEE66F100121534 = {
+			isa = PBXGroup;
+			children = (
+				B2D8707C1AEE66F100121534 /* CMCarRacingiOS */,
+				B2D870961AEE66F100121534 /* CMCarRacingiOSTests */,
+				B2D8707B1AEE66F100121534 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2D8707B1AEE66F100121534 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2D8707A1AEE66F100121534 /* CMCarRacingiOS.app */,
+				B2D870931AEE66F100121534 /* CMCarRacingiOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2D8707C1AEE66F100121534 /* CMCarRacingiOS */ = {
+			isa = PBXGroup;
+			children = (
+				B2D871211AEE6C7900121534 /* SwiftyJSON.h */,
+				B2D871221AEE6C7900121534 /* SwiftyJSON.swift */,
+				B2D870AE1AEE67EB00121534 /* AppDelegate.swift */,
+				B2D870AF1AEE67EB00121534 /* GameScene.sks */,
+				B2D870B01AEE67EB00121534 /* GameScene.swift */,
+				B2D870B11AEE67EB00121534 /* GameViewController.swift */,
+				B2D870A31AEE67AA00121534 /* AnalogStick */,
+				B2D870A71AEE67AA00121534 /* CMCarRacingiOS-Bridging-Header.h */,
+				B2D870A81AEE67AA00121534 /* ParsingToJavaUTF.h */,
+				B2D870A91AEE67AA00121534 /* ParsingToJavaUTF.m */,
+				B2D870871AEE66F100121534 /* Main.storyboard */,
+				B2D8708A1AEE66F100121534 /* Images.xcassets */,
+				B2D8708C1AEE66F100121534 /* LaunchScreen.xib */,
+				B2D8707D1AEE66F100121534 /* Supporting Files */,
+			);
+			path = CMCarRacingiOS;
+			sourceTree = "<group>";
+		};
+		B2D8707D1AEE66F100121534 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2D8707E1AEE66F100121534 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2D870961AEE66F100121534 /* CMCarRacingiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2D870991AEE66F100121534 /* CMCarRacingiOSTests.swift */,
+				B2D870971AEE66F100121534 /* Supporting Files */,
+			);
+			path = CMCarRacingiOSTests;
+			sourceTree = "<group>";
+		};
+		B2D870971AEE66F100121534 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2D870981AEE66F100121534 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2D870A31AEE67AA00121534 /* AnalogStick */ = {
+			isa = PBXGroup;
+			children = (
+				B2D870A41AEE67AA00121534 /* AnalogStick.swift */,
+				B2D870A51AEE67AA00121534 /* aSBgImg.png */,
+				B2D870A61AEE67AA00121534 /* aSThumbImg.png */,
+			);
+			path = AnalogStick;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2D870791AEE66F100121534 /* CMCarRacingiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2D8709D1AEE66F100121534 /* Build configuration list for PBXNativeTarget "CMCarRacingiOS" */;
+			buildPhases = (
+				B2D870761AEE66F100121534 /* Sources */,
+				B2D870771AEE66F100121534 /* Frameworks */,
+				B2D870781AEE66F100121534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CMCarRacingiOS;
+			productName = CMCarRacingiOS;
+			productReference = B2D8707A1AEE66F100121534 /* CMCarRacingiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2D870921AEE66F100121534 /* CMCarRacingiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2D870A01AEE66F100121534 /* Build configuration list for PBXNativeTarget "CMCarRacingiOSTests" */;
+			buildPhases = (
+				B2D8708F1AEE66F100121534 /* Sources */,
+				B2D870901AEE66F100121534 /* Frameworks */,
+				B2D870911AEE66F100121534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2D870951AEE66F100121534 /* PBXTargetDependency */,
+			);
+			name = CMCarRacingiOSTests;
+			productName = CMCarRacingiOSTests;
+			productReference = B2D870931AEE66F100121534 /* CMCarRacingiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2D870721AEE66F100121534 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Benny Franco";
+				TargetAttributes = {
+					B2D870791AEE66F100121534 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					B2D870921AEE66F100121534 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = B2D870791AEE66F100121534;
+					};
+				};
+			};
+			buildConfigurationList = B2D870751AEE66F100121534 /* Build configuration list for PBXProject "CMCarRacingiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2D870711AEE66F100121534;
+			productRefGroup = B2D8707B1AEE66F100121534 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2D870791AEE66F100121534 /* CMCarRacingiOS */,
+				B2D870921AEE66F100121534 /* CMCarRacingiOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2D870781AEE66F100121534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D8708E1AEE66F100121534 /* LaunchScreen.xib in Resources */,
+				B2D8708B1AEE66F100121534 /* Images.xcassets in Resources */,
+				B2D870AC1AEE67AA00121534 /* aSThumbImg.png in Resources */,
+				B2D870AB1AEE67AA00121534 /* aSBgImg.png in Resources */,
+				B2D870B31AEE67EB00121534 /* GameScene.sks in Resources */,
+				B2D870891AEE66F100121534 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2D870911AEE66F100121534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2D870761AEE66F100121534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D870B51AEE67EB00121534 /* GameViewController.swift in Sources */,
+				B2D870B21AEE67EB00121534 /* AppDelegate.swift in Sources */,
+				B2D870AA1AEE67AA00121534 /* AnalogStick.swift in Sources */,
+				B2D871231AEE6C7900121534 /* SwiftyJSON.swift in Sources */,
+				B2D870B41AEE67EB00121534 /* GameScene.swift in Sources */,
+				B2D870AD1AEE67AA00121534 /* ParsingToJavaUTF.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2D8708F1AEE66F100121534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D8709A1AEE66F100121534 /* CMCarRacingiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2D870951AEE66F100121534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2D870791AEE66F100121534 /* CMCarRacingiOS */;
+			targetProxy = B2D870941AEE66F100121534 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2D870871AEE66F100121534 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2D870881AEE66F100121534 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2D8708C1AEE66F100121534 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2D8708D1AEE66F100121534 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2D8709B1AEE66F100121534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2D8709C1AEE66F100121534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2D8709E1AEE66F100121534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CMCarRacingiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Benny/Developer/CMCarRacingiOS/CMCarRacingiOS/CMCarRacingiOS-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		B2D8709F1AEE66F100121534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CMCarRacingiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Benny/Developer/CMCarRacingiOS/CMCarRacingiOS/CMCarRacingiOS-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B2D870A11AEE66F100121534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CMCarRacingiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMCarRacingiOS.app/CMCarRacingiOS";
+			};
+			name = Debug;
+		};
+		B2D870A21AEE66F100121534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CMCarRacingiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMCarRacingiOS.app/CMCarRacingiOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2D870751AEE66F100121534 /* Build configuration list for PBXProject "CMCarRacingiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D8709B1AEE66F100121534 /* Debug */,
+				B2D8709C1AEE66F100121534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2D8709D1AEE66F100121534 /* Build configuration list for PBXNativeTarget "CMCarRacingiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D8709E1AEE66F100121534 /* Debug */,
+				B2D8709F1AEE66F100121534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2D870A01AEE66F100121534 /* Build configuration list for PBXNativeTarget "CMCarRacingiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D870A11AEE66F100121534 /* Debug */,
+				B2D870A21AEE66F100121534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2D870721AEE66F100121534 /* Project object */;
+}
