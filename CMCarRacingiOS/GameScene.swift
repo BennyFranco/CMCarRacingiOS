@@ -9,19 +9,21 @@
 import SpriteKit
 import Foundation
 
+public var hashCar :String?
+
 class GameScene: SKScene, AnalogStickProtocol {
     
     var appleNode: SKSpriteNode?
     
     let moveAnalogStick: AnalogStick = AnalogStick()
     let rotateAnalogStick: AnalogStick = AnalogStick()
-    
-    var carHashCode: Int = -1
-    
+
     var inputStream : NSInputStream?
     var outputStream : NSOutputStream?
     
     let jsonObject2 = "{\"accion\": \"conecta\"}"
+    
+    
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
@@ -55,7 +57,7 @@ class GameScene: SKScene, AnalogStickProtocol {
         /* Called before each frame is rendered */
  
     }
-    
+        
     func connect() {
         let addr = "192.168.43.1"
         let port = 3389
@@ -83,13 +85,13 @@ class GameScene: SKScene, AnalogStickProtocol {
         
         let data: NSData = parsingJava.convertToJavaUTF8(jsonString.description+"\n")
         outputStream.write(UnsafePointer<UInt8>(data.bytes), maxLength: data.length)
+        
+        hashCar = self.hashCode();
     }
     
     
     // MARK: AnalogStickProtocol
     func moveAnalogStick(analogStick: AnalogStick, velocity: CGPoint, angularVelocity: Float) {
-            
-            var jsonMov = "{\"accion\": \"movimiento\", \"velocidadx\": \"" + (-1*(velocity.x * 0.09)).description + "\", \"velocidady\": \"" + (-1*(velocity.y * 0.09)).description + "\", \"rotacion\": \"" + (angularVelocity).description + "\", \"tag\": \"" + self.carHashCode.description + "\"}"
            
             let addr = "192.168.43.1"
             let port = 3389
@@ -104,6 +106,9 @@ class GameScene: SKScene, AnalogStickProtocol {
             let outputStream = out!
             inputStream.open()
             outputStream.open()
+        
+        
+        var jsonMov = "{\"accion\": \"movimiento\", \"velocidadx\": \"" + (-1*(velocity.x * 0.09)).description + "\", \"velocidady\": \"" + (-1*(velocity.y * 0.09)).description + "\", \"rotacion\": \"" + (angularVelocity).description + "\", \"tag\": \"" + hashCar! + "\"}"
             
             var readByte :UInt8 = 0
             while inputStream.hasBytesAvailable {
@@ -119,5 +124,10 @@ class GameScene: SKScene, AnalogStickProtocol {
             let data: NSData = parsingJava.convertToJavaUTF8(jsonString.description+"\n")
             outputStream.write(UnsafePointer<UInt8>(data.bytes), maxLength: data.length)
 
+        }
+    
+        func hashCode ()-> String{
+            var hcd :UInt32 = arc4random()
+            return hcd.description
         }
     }
