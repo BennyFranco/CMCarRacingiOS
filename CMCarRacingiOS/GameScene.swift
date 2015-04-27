@@ -34,12 +34,12 @@ class GameScene: SKScene, AnalogStickProtocol {
         
         self.addChild(myLabel)
         
-        let bgDiametr: CGFloat = 120
-        let thumbDiametr: CGFloat = 60
+        let bgDiametr: CGFloat = 240
+        let thumbDiametr: CGFloat = 120
         let joysticksRadius = bgDiametr / 2
         moveAnalogStick.bgNodeDiametr = bgDiametr
         moveAnalogStick.thumbNodeDiametr = thumbDiametr
-        moveAnalogStick.position = CGPointMake(joysticksRadius + 15, joysticksRadius + 15)
+        moveAnalogStick.position = CGPointMake(joysticksRadius + 30, joysticksRadius + 30)
         moveAnalogStick.delagate = self
         self.addChild(moveAnalogStick)
         
