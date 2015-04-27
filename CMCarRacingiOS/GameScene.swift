@@ -89,7 +89,7 @@ class GameScene: SKScene, AnalogStickProtocol {
     // MARK: AnalogStickProtocol
     func moveAnalogStick(analogStick: AnalogStick, velocity: CGPoint, angularVelocity: Float) {
             
-            var jsonMov = "{\"accion\": \"movimiento\", \"velocidadx\": \"" + (-1*(velocity.x * 0.09)).description + "\", \"velocidady\": \"" + (-1*(velocity.y * 0.09)).description + "\", \"rotacion\": \"" + (angularVelocity*0.09).description + "\", \"tag\": \"" + self.carHashCode.description + "\"}"
+            var jsonMov = "{\"accion\": \"movimiento\", \"velocidadx\": \"" + (-1*(velocity.x * 0.09)).description + "\", \"velocidady\": \"" + (-1*(velocity.y * 0.09)).description + "\", \"rotacion\": \"" + (angularVelocity).description + "\", \"tag\": \"" + self.carHashCode.description + "\"}"
            
             let addr = "192.168.43.1"
             let port = 3389
